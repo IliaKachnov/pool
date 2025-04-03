@@ -1,0 +1,57 @@
+@font-face {
+  font-family: "Roboto-Bold";
+  src: url("../fonts/Roboto-Bold.ttf") format("truetype");
+}
+
+@font-face {
+  font-family: "Roboto-Medium";
+  src: url("../fonts/Roboto-Medium.ttf") format("truetype");
+}
+
+@font-face {
+  font-family: "Roboto-Regular";
+  src: url("../fonts/Roboto-Regular.ttf") format("truetype");
+}
+
+@font-face {
+  font-family: "Roboto-SemiBold";
+  src: url("../fonts/Roboto-SemiBold.ttf") format("truetype");
+}
+
+body {
+  scroll-behavior: smooth;
+  font-family: "Roboto-Regular";
+}
+.wrapper {
+  position: relative;
+}
+
+.scroll {
+  pointer-events: all;
+  opacity: 1;
+  visibility: visible;
+  width: 60px;
+  height: 60px;
+  border-radius: 50%;
+  position: fixed;
+  z-index: 6;
+  bottom: 5%;
+  right: 3%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: rgb(0, 178, 160);
+  cursor: pointer;
+}
+.scroll svg {
+  transform: rotate(-90deg) scale(1.6);
+}
+.scroll.close {
+  opacity: 0;
+  visibility: hidden;
+  pointer-events: none;
+}
+::-webkit-scrollbar-track {
+  background-color: #d12900;
+  color: #d12900;
+}
